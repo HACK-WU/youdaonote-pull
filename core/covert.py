@@ -241,7 +241,8 @@ class JsonConvert(object):
                 # 如果是高亮块
                 elif three_content and two_five_contents:
                     source_text = self._get_common_text(one_five_content)
-                    text = "```\r\n{text}\r\n```".format(text=source_text)
+                    # text = "```\r\n{text}\r\n```".format(text=source_text)
+                    text = "> {text}".format(text=source_text)
                 else:
                     text = ""
                 if text:
